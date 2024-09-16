@@ -1,18 +1,20 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  box-shadow: 0px 5px 10px rgb(85, 84, 84);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: black;
   line-height: 30px;
   font-size: larger;
 }
-.projects {
-  display: flex;
-  box-shadow: 0px 5px 10px rgb(85, 84, 84);
-  flex-direction: column;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-#container-projects {
+.containerProjects {
   width: 40%;
 }
 h1 {
