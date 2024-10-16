@@ -1,0 +1,96 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  padding: 32px 48px 0px;
+  justify-items: center;
+  font-family: Open Sans, sans-serif;
+}
+@media (max-width: 1100px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+img {
+  width: 100%;
+  height: 215px;
+  border-radius: 10px 10px 0 0;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-radius: 10px;
+  padding: 0px;
+  margin: 50px;
+  width: 400px;
+}
+@media (max-width: 480px) {
+  .flexContainer {
+    width: 300px;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.list2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  align-items: flex-end;
+  flex-grow: 2;
+}
+.listItem {
+  font-size: 15px;
+  color: rgb(216, 191, 191);
+  padding: 5px 5px;
+  margin: 5px;
+  white-space: nowrap;
+}
+
+hr {
+  width: 50px;
+  height: 3px;
+  margin: 12px auto;
+  border: 0px;
+  background: rgb(208, 187, 87);
+}
+
+.a {
+  color: rgb(212, 192, 192);
+  padding: 3px 15px;
+  background: rgb(107, 48, 48);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.a:hover {
+  background: rgb(128, 20, 20);
+}
+.description {
+  font-size: 16px;
+  color: rgb(228, 230, 231);
+  text-align: center;
+  padding: 0 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 26px;
+  color: rgb(190, 229, 255);
+  cursor: default;
+  margin: 20px 0 0;
+}
+.techDiv {
+  font-size: 20px;
+  color: rgb(190, 229, 255);
+}

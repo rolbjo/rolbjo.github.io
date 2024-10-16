@@ -1,0 +1,102 @@
+.contactWrapper {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  margin: 80px 130px;
+  border-radius: 20px;
+  align-items: baseline;
+}
+@media (max-width: 880px) {
+  .contactWrapper {
+    flex-direction: column;
+    margin: 80px 20px;
+  }
+}
+
+.contactFields {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  min-height: 400px;
+}
+@media (max-width: 660px) {
+  .contactFields {
+    width: auto;
+  }
+}
+
+input,
+textarea {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 120, 255, 0.25);
+  outline: none;
+}
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+.button {
+  padding: 10px 20px;
+  background-color: #0078ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.contactMessage {
+  margin-top: 20px;
+  color: green;
+  font-size: 1rem;
+  text-align: center;
+}
+.contactHeader {
+  color: black;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Segoe UI';
+}
+.contactIntroduction {
+  color: #4e4e4e;
+  padding-right: 45px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Segoe UI Light', 'sans-serif';
+  white-space: pre-line;
+}
+.contactIcons {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contactIcons svg:hover {
+  transform: scale(1.2);
+  color: #333333;
+}
